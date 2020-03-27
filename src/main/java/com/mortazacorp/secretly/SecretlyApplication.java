@@ -33,15 +33,13 @@ public class SecretlyApplication {
     CommandLineRunner runner() {
         return args -> {
 //            Save demo data after start
-            userRepository.save(new User("admin",
-                    "$2a$04$KNLUwOWHVQZVpXyMBNc7JOzbLiBjb9Tk9bP7KNcPI12ICuvzXQQKG"));
-            messageRepository.save(new SecretMessage(null, "admin", str,
+            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
                     1, new Date()));
-            messageRepository.save(new SecretMessage(null, "admin", str,
+            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
                     3, new Date()));
-            messageRepository.save(new SecretMessage(null, "admin", str,
+            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
                     2, new Date()));
-            messageRepository.save(new SecretMessage(null, "admin", str,
+            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
                     2, new Date()));
 
         };
