@@ -28,21 +28,4 @@ public class SecretlyApplication {
     public static void main(String[] args) {
         SpringApplication.run(SecretlyApplication.class, args);
     }
-
-    @Bean
-    CommandLineRunner runner() {
-        return args -> {
-//            Save demo data after start
-            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
-                    1, new Date()));
-            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
-                    3, new Date()));
-            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
-                    2, new Date()));
-            messageRepository.save(new SecretMessage(null, "JJWY2rMAubbZqWhJauGeF", str,
-                    2, new Date()));
-
-        };
-    }
-
 }
