@@ -48,7 +48,7 @@ public class SecretMessageController {
     public ResponseEntity isUserExist(@PathVariable String userId){
         System.out.println(userId);
         if(userRepository.existsByUserName(userId)){
-            return ResponseEntity.status(HttpStatus.FOUND).build();
+            return ResponseEntity.status(HttpStatus.OK).build();
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
